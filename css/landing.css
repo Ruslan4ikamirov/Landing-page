@@ -99,6 +99,7 @@ body{
 }
 
 .gallery__manager{
+    max-width: 416px;
     color: white;
     position: absolute;
     bottom: 0;
@@ -108,14 +109,41 @@ body{
 }
 
 .gallery__manager-body{
+    box-sizing: border-box;
     background-color: rgba(53, 89, 199, 1);
     padding: 20px 0px 26px;
     display: flex;
+    gap: 20px;
     flex-direction: column;
     align-items: center;
     min-height: 150px;
 }
 
 .gallery__manager-header{
-    font-weight: 800;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.gallery__manager-text{
+    font-size: 24px;
+    width: 72%;
+    text-align: center;
+}
+
+.gallery__controls{
+    max-width: 416px;
+    max-height: 40px;
+    display: flex;
+}
+
+.gallery__control{
+    background-color: rgba(41, 46, 61, 1);
+    display: flex;
+    width: 50%;
+    gap: 10px;
+}
+
+.gallery__control-arrow{
+    width: 26px;
+    height: 17px;
 }
